@@ -4,7 +4,7 @@
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 <title>Resume</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -52,6 +52,7 @@ thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
 .CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -99,7 +100,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
@@ -148,21 +149,12 @@ iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 
 
-#write { padding-top: 0px !important; padding-bottom: 20px !important; }
-content { margin-top: 0px !important; padding-top: 0px !important; }
-a { color: rgb(0, 0, 0); }
-h1, h2 { border-bottom: 1px solid rgb(238, 238, 238) !important; margin-bottom: 3px !important; padding-bottom: 3px !important; }
-h2 img { width: 26px !important; }
-h2 { font-size: 17px !important; }
-p { margin-bottom: 2px !important; margin-top: 2px !important; font-size: 14px !important; }
-ul { margin-top: 2px !important; margin-bottom: 2px !important; }
-li p { margin-bottom: 0px !important; }
 :root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
 html { font-size: 16px; }
 body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
 #write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
 #write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
-a { color: rgb(85, 85, 85); }
+a { color: rgb(65, 131, 196); }
 h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
 h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
 h1 tt, h1 code { font-size: inherit; }
@@ -172,7 +164,11 @@ h4 tt, h4 code { font-size: inherit; }
 h5 tt, h5 code { font-size: inherit; }
 h6 tt, h6 code { font-size: inherit; }
 h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
-h2 { padding-bottom: 0.3em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); font-size: 20px !important; }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
 p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
 li > ol, li > ul { margin: 0px; }
 hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
@@ -224,17 +220,6 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 .dropdown-menu .divider { border-color: rgb(229, 229, 229); }
 
 
-@media print {
-  #write { padding-top: 0px !important; padding-bottom: 20px !important; }
-  content { margin-top: 0px !important; padding-top: 0px !important; }
-  a { color: rgb(0, 0, 0); }
-  h1, h2 { border-bottom: 1px solid rgb(238, 238, 238) !important; margin-bottom: 3px !important; padding-bottom: 3px !important; }
-  h2 img { width: 16px !important; }
-  h2 { font-size: 17px !important; }
-  p { margin-bottom: 2px !important; margin-top: 2px !important; }
-  ul { margin-top: 2px !important; margin-bottom: 2px !important; }
-  li p { margin-bottom: 0px !important; }
-}
 
 
 
@@ -243,28 +228,28 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 </head>
 <body class='typora-export os-windows' >
 <div  id='write'  class = 'is-node'> <center>
-     <h1>XXX</h1>
+     <h1>刘其万个人简历</h1>
      <div>
          <span>
              <img src="assets/phone-solid.svg" width="18px" onerror="this.style.display = 'none';">
-             180XXXXXXXX
+             18565148161
          </span>
          ·
          <span>
              <img src="assets/envelope-solid.svg" width="18px" onerror="this.style.display = 'none';">
-             zhengyc101@163.com
+             807680925@qq.com
          </span>
          ·
          <span>
              <img src="assets/github-brands.svg" width="18px" onerror="this.style.display = 'none';">
-             <a href="https://github.com/CyC2018">CyC2018</a>
+             <a href="https://github.com/Kevan807680925">Kevan Liu</a>
          </span>
          ·
          <span>
              <img src="assets/rss-solid.svg" width="18px" onerror="this.style.display = 'none';">
-             <a href="#">My Blog</a>
+             <a href="https://blog.csdn.net/u011207553">CSDN Blog</a>
          </span>
      </div>
- </center><h2><a name='header-n4' class='md-header-anchor '></a><img src="assets/info-circle-solid.svg" width="30px"> 个人信息 </h2><ul><li>男，1994 年出生</li><li>求职意向：Java 研发工程师</li><li>工作经验：0 年（校招可不填）</li><li>期望薪资：0k（校招可不填）</li></ul><h2><a name='header-n14' class='md-header-anchor '></a><img src="assets/graduation-cap-solid.svg" width="30px"> 教育经历</h2><ul><li>硕士，XXXX大学，计算机科学与技术专业，2016.9~2019.7</li><li>学士，XXXX大学，软件工程专业，2012.9~2016.7</li><li>绩点：***，年级前 100%</li><li>通过了 CET4/6 英语等级考试</li></ul><h2><a name='header-n24' class='md-header-anchor '></a><img src="assets/briefcase-solid.svg" width="30px"> 工作经历</h2><ul><li><p><strong>XXXX 公司，XXXX 部门，XXXX 工程师，2010.1~2010.9</strong></p><p>负责 XXX</p></li></ul><h2><a name='header-n29' class='md-header-anchor '></a><img src="assets/project-diagram-solid.svg" width="30px"> 项目经历</h2><ul><li><p><strong>XXXX 项目</strong></p><p><em>使用到的技术</em></p><p>使用一两句话描述项目的主要功能，然后介绍自己在项目中的角色，解决了什么问题，使用什么方式解决，比别人的方法相比有什么优势（尽量用数据来说明）。</p></li></ul><h2><a name='header-n35' class='md-header-anchor '></a><img src="assets/tools-solid.svg" width="30px"> 技能清单</h2><ul><li>★★★ Java</li><li>★★☆ C++、Python</li><li>★★★ MySQL</li><li>★★★ Redis</li><li>★★☆ Spring</li><li>★☆☆ RabbitMQ、ZooKeeper</li><li>★★☆ JavaScript</li></ul></div>
+ </center><h2><a name='header-n2' class='md-header-anchor '></a><img src="assets/info-circle-solid.svg" width="30px"> 个人信息 </h2><ul><li>男，1992 年出生</li><li>求职意向：Java 研发工程师</li><li>工作经验：3年6个月</li><li>期望薪资：13k</li></ul><h2><a name='header-n12' class='md-header-anchor '></a><img src="assets/graduation-cap-solid.svg" width="30px"> 教育经历</h2><ul><li>学士，华侨大学，软件工程专业，2012.9~2016.7</li></ul><h2><a name='header-n16' class='md-header-anchor '></a><img src="assets/briefcase-solid.svg" width="30px"> 工作经历</h2><ul><li><strong>广州市巴图鲁信息科技有限公司，产品研发部，Java开发工程师，2018.6~至今</strong></li><li><strong>广州丰石科技有限公司，产品研发部，Java开发工程师，2016.11~2018.5</strong></li><li><strong>厦门市巨龙信息科技有限公司，综合情报事业部，Java开发工程师，2015.12~2016.10</strong></li></ul><h2><a name='header-n24' class='md-header-anchor '></a><img src="assets/project-diagram-solid.svg" width="30px"> 项目经历</h2><ul><li><p><strong>中配保</strong><span>																																					</span>   2018.6~至今</p><p><strong>相关技术：</strong>Java8、SSM、Junit、Mockito、Maven、Dubbo、Redis、Kafka、Cat、MySQL、设计模式</p><p><strong>项目描述：</strong>中配保是为了开拓车险市场的一款产品，主要用户是保险公司的查勘员和核价师，中配保是在公司的主要”的基础上增加保险定制化需求，主要的功能有询价、报价、核价、下单、支付、物流、退货、换货等。</p><p><strong>我的工作：</strong>对迭代内需求进行设计、后端开发、自测、联调、维护等，作为开发负责人完成了免核规则、推单、订单分享等主航道项目。</p></li><li><p><strong>开放平台</strong>                                                                                                                                                 2018.10~至今</p><p><strong>相关技术：</strong>Java8、SSM、Junit、Mockito、Maven、Dubbo、Redis、Kafka、Cat、MySQL、设计模式</p><p><strong>项目描述：</strong>开放平台是巴图鲁对外提供API服务的平台。</p><p><strong>我的工作：</strong>对迭代内需求进行设计、后端开发、自测、联调、维护等，作为开发负责人完成了询价对接、物流对接等主航道项目。</p></li><li><p><strong>实时客流监控平台</strong><span>																															</span>2016.11~2018.5</p><p><strong>相关技术：</strong>Java8、SSM、Junit、Maven、Redis、Kafka、PostGresql</p><p><strong>项目描述：</strong>实时客流监控平台以移动的大数据为基础，对区域和人群进行不同维度的数据统计分析，实现监控、预警等功能。</p><p><strong>我的工作：</strong>负责需求设计、开发、自测、联调、重构、维护等工作。</p></li><li><p><strong>线索猎手</strong><span>																														</span>                   2015.12~2016.10</p><p><strong>相关技术：</strong>Java6、Jsp、CSS、JQuery、SSH、Junit、Maven、ActiveMQ、Oracle</p><p><strong>项目描述：</strong>线索猎手是一个对在控人员（犯罪份子、危险人物）的活动信息进行统计分析，并预测其犯罪活动的大型项目，是部门产品级项目。</p><p><strong>我的工作：</strong>负责前后端开发、自测、维护等工作。</p></li></ul><h2><a name='header-n46' class='md-header-anchor '></a><img src="assets/tools-solid.svg" width="30px"> 技能清单</h2><ul><li>★★★ Java、Redis、IntelliJ IDEA</li><li>★★☆ Spring、Mybatis、MySQL、Python、Git、Maven、Kafka、Zookeeper、Dubbo</li><li>★☆☆ Nginx、Tomcat、PostGresql、HTML、JS、JQuery、CSS</li></ul></div>
 </body>
 </html>
