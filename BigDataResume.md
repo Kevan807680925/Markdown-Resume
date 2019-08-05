@@ -11,22 +11,23 @@
  ## 个人信息 
 
  - 男/1992
-- 一本/华侨大学/软件工程
-- 工作年限：3年
-- 博客：<https://blog.csdn.net/u011207553>
-- Github：<https://github.com/Kevan807680925>
-- 期望职位：中级Java开发工程师
-- 期望薪资：10k
+ - 一本/华侨大学/软件工程
+ - 工作年限：3年
+ - 博客：<https://blog.csdn.net/u011207553>
+ - Github：<https://github.com/Kevan807680925>
+ - 期望职位：大数据开发工程师
+
+ - 期望薪资：12k
+ - 期望城市：成都
 
 ## 工作经历
 
-- **广州市巴图鲁信息科技有限公司|电商（1000+人）|产品研发部|中级Java开发工程师|2018.6~2019.6**
-- **广州丰石科技有限公司|大数据（200+人）|产品研发部|Java开发工程师|2016.7~2018.5**
-- **厦门市巨龙信息科技有限公司|企业服务（500+人）|综情部|Java开发工程师|2015.12~2016.6**
+- **广州市巴图鲁信息科技有限公司|电商（1000+人）|产品研发部|Java开发工程师|2018.3~2019.6**
+- **广州丰石科技有限公司|大数据（200+人）|产品研发部|Java开发工程师|2016.7~2018.3**
 
 ## 项目经历
 
-- **中配保**																																			 2018.6~2019.6
+- **中配保**																																			 2018.3~2019.6
 
   **相关技术：**Java8、Dubbo、SSM、Redis、MySQL、Kafka、Junit、Maven、Git、Cat、设计模式
 
@@ -36,7 +37,7 @@
   
   **我的收获：**掌握敏捷开发，掌握微服务框架Dubbo，掌握内存数据库Redis的运用及原理，对分布式概念有了全新的认知。
   
-- **巴图鲁开放平台**                                                                                                                              2018.10~2019.6
+- **巴图鲁开放平台**                                                                                                                                          2018.10~2019.6
 
   **相关技术：**Java8、Dubbo、SSM、Redis、MySQL、Kafka、Junit、Maven、Git、Cat、设计模式
   
@@ -46,35 +47,25 @@
   
   **我的收获：**掌握敏捷开发模式，理解API网关，对设计模式的运用有了更好的理解。
   
-- **实时客流监控平台**																															2016.11~2018.5
+- **实时客流监控平台**																															2017.7~2018.5
 
-  **相关技术：**Java8、SSM、Junit、Maven、Redis、Kafka、PostGresql、HBase
+  **相关技术：**Java8、SSM、Junit、Maven、Redis、Kafka、PostGresql、Hadoop、HBase、Hive、Spark、Jenkins
 
   **项目描述：**实时客流监控平台以移动的大数据为基础，对区域和人群进行不同维度的数据统计分析，实现监控、预警等功能。
 
   **我的工作：**负责区域监控、人群监控、全局热力图、系统设置等多个模块的开发、自测、联调、上线、 重构、维护等工作。
 
-  **我的收获：**掌握Java8新特性，对代码质量、重构有了更深的体会，对大数据生态系统有了初步的认识。
+  **我的收获：**掌握Java8新特性，对代码质量、重构有了更深的体会，对大数据生态系统有了基本的认识。
 
 - **珠海自动化报表系统**										        													                   2016.7~2017.6
 
-  **相关技术：**Java8、SpringBoot、Mybatis、Junit、Maven、MySQL、Git、Hive
+  **相关技术：**Java8、SSM、Junit、Maven、MySQL、Git、Hive
 
   **项目描述：**珠海自动化报表系统以大数据分析结果为数据来源，进行个性化多维度的报表自动生成。
 
   **我的工作：**负责报表系统的规则维护、报表生成的开发、重构、自测、联调、上线、维护等工作。
-
-  **我的收获：**了解Hive的基本使用，熟练掌握多线程技术，利用多线程快速生成报表。
-
-- **线索猎手**																														                   2015.12~2016.6
-
-  **相关技术：**Java6、Jsp、CSS、JQuery、SSH、Junit、Maven、ActiveMQ、Oracle
-
-  **项目描述：**线索猎手是一个对在控人员（犯罪份子、危险人物）的活动信息进行统计分析，并预测其犯罪活动的大型项目，是部门产品级项目。
-
-  **我的工作：**负责多个模块的详情页前后端开发、自测等工作。
   
-  **我的收获：**熟练掌握JAVA WEB基础，掌握瀑布模式开发流程。
+  **我的收获：**了解Hive的基本使用，熟练掌握多线程技术，利用多线程快速生成报表。
 
 ## 技术文章
 
@@ -84,6 +75,7 @@
 
 ## 最近阅读书籍
 
+- 《Hadoop权威指南》第四版
 - 《Kafka权威指南》
 - 《Redis设计与实现》
 - 《从Paxos到Zookeeper  分布式一致性原理与实践》
@@ -91,12 +83,11 @@
 ## 技能清单
 
 - 编程语言： Java/Python
+- 大数据：Hadoop/Spark/HBase/Hive/Zookeeper/Flume/Sqoop/Flink
 - 后端框架： SpringMVC/Spring/Mybatis/SpringBoot/Django/Struts/Hibernate
 - 数据库：MySql/PostGresql/Redis
 - 消息队列：Kafka/ActiveMQ
 - 微服务：Dubbo
 - 单元测试：Junit/Mockito/Spock
 - 版本控制/CI/CD：Git/SVN/Jenkins/Maven/Docker
-- 大数据：Hadoop/Spark/HBase/Hive/Zookeeper
-- 前端：Html/Css/Js/JQuery/Vue
 - 其他：IntelliJ IDEA/Nginx/Tomcat/Linux/Postman
